@@ -1,0 +1,797 @@
+/* 1. VARIABLES DE DISEÑO */
+:root {
+  --primary-color: #47b2e4;
+  --secondary-color: #6c757d;
+  --light-color: #f8f9fa;
+  --dark-color: #343a40;
+  --font-family-base: 'Poppins', sans-serif;
+}
+
+/* 2. ESTILOS GENERALES */
+body {
+  font-family: var(--font-family-base);
+  color: #212529;
+  background-color: #ffffff;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+/* 3.Navbar centrado */
+.navbar .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Centrar menú */
+.navbar-collapse {
+  flex-grow: 1;
+  justify-content: center !important;
+}
+
+/* Alineación limpia de los ítems */
+.navbar-nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 5;
+  margin: 0;
+  list-style: none;
+  gap: 80px !important;
+  
+}
+
+/* Íconos de usuario y carrito  */
+.navbar-icons {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-nav .nav-link {
+  font-family: 'Mada', sans-serif; 
+  font-weight: 300; /* opcional */
+  transition: font-weight 0.3s ease;
+  font-size: 1rem; 
+}
+.navbar-nav .nav-link.active {
+  font-weight: 700; /* Bold */
+}
+.navbar-scrolled {
+  background-color: rgba(240, 225, 253, 0.95); /* O el color que quieras */
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1); /* Opcional: sombra para dar profundidad */
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+/* 4. HERO */
+
+.hero-section {
+  background-color: #F8F7FF; 
+}
+.hero-section {
+  min-height: 100vh;
+  padding-top: 100px;
+  background: radial-gradient(circle at 75% 50%, rgba(139, 76, 255, 0.15), transparent 60%);
+}
+.row.p-5 {
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  padding-top: 100px;
+}
+
+h1, h2, h3, h4, h5 {
+  font-weight: 600;
+  line-height: 1.2;
+  font-family: 'Libre Bodoni', sans-serif; 
+}
+
+.h1-custom {
+  font-family: 'Libre Bodoni', sans-serif; 
+  font-size: 4.3rem !important;
+  margin-bottom: 20px;
+  color: #8400FF!important; 
+}
+.h2-custom {
+  font-family: 'Libre Bodoni', sans-serif; 
+  font-size: 3rem;
+  margin-bottom: 20px;
+  color: #8400FF ; 
+}
+.mt-3 {
+  font-family: 'mada', sans-serif; 
+  font-size: 1rem;
+  color: #8400FF ;
+}
+
+p {
+  font-family: 'mada', sans-serif; 
+  font-size: 1rem;
+  color: #F8F7FF;
+}
+
+.hero-section {
+  background-color: #F8F7FF; 
+}
+.hero-section img:hover {
+  transform: none !important;
+  transition: none !important;
+}
+.hero-section img {
+  outline: none !important;
+  box-shadow: none !important;
+  border: none !important;
+}
+.hero-section img:hover,
+.hero-section img:focus {
+  outline: none !important;
+  box-shadow: none !important;
+  border: none !important;
+}
+
+/* Botones */
+.btn {
+  border-radius: 50px;
+  padding: 10px 30px;
+  font-weight: 500;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-dark {
+  background-color: #FF070B;
+  border: none;
+}
+
+.btn-dark:hover {
+  background-color: #c59336;
+}
+
+.btn-outline-dark {
+  border: 2px solid var(--primary-color);
+  color: var(--primary-color);
+}
+
+.btn-outline-dark:hover {
+  background-color: var(--primary-color);
+  color: #fff;
+}
+
+/* 5. SECCIONES */
+section {
+  padding: 100px 0;
+}
+
+section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+
+/* 6. CARDS */
+.card {
+  border: none;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--dark-color);
+}
+
+.masonry__container {
+  column-count: 4;
+  column-gap: 1rem;
+}
+
+.masonry__item {
+  width: 100%;
+  display: block;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+}
+
+.card-text {
+  color: #ffffff;
+}
+
+/* 7. TESTIMONIOS */
+.blockquote {
+  background-color: #ceceffc2;
+  border-left: 4px #ceceffc2;
+  padding: 20px;
+  border-radius: 18px;
+  font-family: 'mada', Arial, Helvetica, sans-serif;
+  color: #2400FF; 
+  font-weight: 200;
+  font-size: 1.5rem;
+}
+.blockquote-footer {
+  font-family: 'mada', Arial, Helvetica, sans-serif;
+  color: #2400FF; 
+  font-weight: 200;
+  font-size: 1rem;
+  margin-right: 8px;
+}
+
+/* about section */
+.about-section {
+  background-color: #F8F7FF; /* o el color que prefieras */
+  padding: 10px 0;
+}
+
+/* 8. FORMULARIO */
+form .form-control {
+  border-radius: 8px;
+  border: 1px solid #CECEFF;
+  background-color:#CECEFF;
+}
+
+form button.btn-primary {
+  background-color: var(--primary-color);
+  border: none;
+  width: 100%;
+  border-radius: 50px;
+  margin-top: 20px;
+}
+
+/* 9. FOOTER */
+footer {
+ 
+  color: #ffffff;
+  font-size: 0.9rem;
+}
+
+/* 10. IMÁGENES */
+img.rounded-circle {
+  border: 5px solid var(--light-color);
+}
+
+/* 11. GALERÍA */
+.container .row img {
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.container .row img:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
+}
+.bg-aprende .row img:hover {
+  transform: none !important;
+  box-shadow: none !important;
+}
+
+/* ============================== */
+/* CUSTOM HELPER CLASSES */
+/* ============================== */
+
+/* ============================== */
+/* CUSTOM HELPER CLASSES */
+/* ============================== */
+
+/* TITULOS */
+.h1-custom {
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 1.2;
+  color: var(--dark-color);
+}
+
+.h2-custom {
+  font-size: 2.5rem;
+  font-weight: 600;
+  line-height: 1.3;
+  color: #8400FF;
+}
+
+.h3-custom {
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 1.4;
+  color: var(--dark-color);
+}
+/* txtos seccion de paso a paso */
+.h4-custom {
+  font-family: 'Mada bold', sans-serif; 
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--dark-color);
+}
+.step-number {
+ font-family: 'mada', Arial, Helvetica, sans-serif;
+  color: #2400FF; 
+  font-weight: 700;
+  font-size: 1.4rem;
+  margin-right: 8px;
+}
+/* fondo y titulos seccion nosotros*/
+/* Título de la card izquierda */
+.bg-violet-card .text-title {
+  font-family: 'Mada', serif;
+  color: white;
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+/* Párrafo de la card izquierda */
+.bg-violet-card .text-body {
+  font-family: 'Mada', sans-serif, ;
+  color: white, ;
+  font-size: 1em;
+  line-height: 1.6;
+}
+
+.bg-custom {
+  background-color: #9381FF;
+  padding: 60px 0; /* para que el espacio vertical quede cómodo */
+  color: white; /* para que el texto contraste sobre fondo oscuro */
+}
+.h2-white {
+  color: white ;
+  
+}
+.text-white {
+    color: #FFFFFF; /* Blanco */
+}
+.section-spacing {
+    padding-top: 80px; /* Ajusta según el espaciado que quieras entre secciones */
+    padding-bottom: 80px;
+}
+
+.h2-custom {
+    font-family: 'Libre bodoni', sans-serif; /* Reemplaza 'TuFuentePrincipal' con el nombre de tu fuente */
+    font-size: 2em; /* Ajusta el tamaño de la fuente */
+    margin-bottom: 20px;
+}
+
+.h2-white {
+    color: #FFFFFF;
+}
+
+.subtitle-text {
+    font-family: 'mada', sans-serif; /* Reemplaza 'TuFuenteSecundaria' */
+    font-size: 1.2em; /* Ajusta el tamaño */
+    color: #E0E0E0; /* Un blanco suave, o #FFFFFF */
+}
+
+/* Estilo para el párrafo dentro de la sección morada */
+.bg-purple p {
+    font-family: 'mada', sans-serif; /* Reemplaza 'TuFuenteNormal' */
+    font-size: 1em;
+    line-height: 1.6;
+    color: #FFFFFF;
+}
+
+.bg-purple {
+    background-color: #5D37B4; /* O el código hexadecimal exacto de tu morado */
+}.bg-purple {
+    background-color: #5D37B4; /* O el código hexadecimal exacto de tu morado */
+    /* Puedes agregar padding si necesitas más espacio interno en la sección */
+    padding: 60px 0; /* Ejemplo de padding */
+}
+.text-white {
+    color: #FFFFFF;
+}
+.bg-custom {
+  background-color: #9381FF;
+  padding: 60px 0;
+  color: white; /* texto general */
+}
+.bg-light-custom {
+  background-color: #F8F7FF;
+}
+
+.bg-violet-card {
+  background-color: #8400FF;
+  color: white;
+  border: none;
+}
+.bg-violet-card {
+  background-color: #8400FF;
+  color: white;
+  border: none;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+.text-title {
+  font-family: 'Libre Bodoni', serif;
+  color: white;
+  font-size: 1.5em;
+}
+.text-violeta-yavino {
+  color: #8400FF;
+  font-size: 2rem
+}
+
+.text-purple {
+  color: #8400FF !important;
+}
+.text-white-force {
+  color: #ffffff !important;
+}
+.text-big {
+  font-size: 3rem; /* O subí a 1.5rem, 2rem, según prefieras */
+  line-height: 1,2;
+}
+.card.no-hover:hover {
+  transform: none !important;
+  box-shadow: none !important;
+}
+
+
+
+
+
+:root {
+  --text-color-main: white;
+  --text-color-subtitle: #D1C4E9; /* un violeta claro para subtítulos */
+}
+
+/* Estilo general para el texto largo */
+.bg-custom p {
+  color: #ffffff ;
+  font-size: 1rem;
+  font-family: 'Mada bold', sans-serif; 
+}
+
+/* Estilo para el subtítulo */
+.bg-custom .subtitle-text {
+  color: #ffffff ;
+  font-family: 'Mada regular', sans-serif; 
+  font-size: 1.2rem;
+
+}
+/* botones abajo de la galeria */
+.indicator-btn {
+  all: unset; /* ✅ Elimina todos los estilos por defecto del navegador */
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #A259FF;
+  color: #A259FF;
+  background-color: white;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.indicator-btn:hover {
+  background-color: #f2e9fd;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.dot.active {
+  background-color: #A259FF;
+}
+
+.dot.inactive {
+  background-color: #d1cfe2;
+}
+/* color subtitulo galeria */
+ .bg-aprende p {
+  color: #A259FF;
+}
+
+
+
+/* PÁRRAFOS Y TEXTOS */
+.p-custom {
+  font-size: 1rem;
+  color: #8400FF;
+  line-height: 1.6;
+}
+
+.lead-custom {
+  font-size: 1.25rem;
+  font-weight: 400;
+  color: var(--secondary-color);
+}
+
+/* FONDOS E IMÁGENES */
+.bg-cover {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.bg-overlay-light {
+  background-color: rgba(255,255,255,0.7);
+  backdrop-filter: blur(5px);
+}
+
+.bg-overlay-dark {
+  background-color: rgba(0,0,0,0.5);
+  backdrop-filter: blur(5px);
+  color: #fff;
+}
+
+.img-rounded {
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+/* TEXTOS ADICIONALES */
+.text-uppercase-custom {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-family: 'Mada bold', sans-serif; 
+}
+
+.text-bold {
+  font-weight: 700;
+}
+
+.text-muted-custom {
+  color: #6c757d;
+}
+
+/* ESPACIADOS */
+.section-spacing {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.section-spacing-sm {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+
+/* ============================== */
+/* MEDIA QUERIES */
+/* ============================== */
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+  .navbar-brand {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .masonry__container {
+    column-count: 3;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .masonry__container {
+    column-count: 2;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .masonry__container {
+    column-count: 1;
+  }
+}
+.bg-violeta-yavino .small {
+  font-size: 1.5rem !important;
+  line-height: 1.5;
+}
+.bg-violeta-yavino h5 {
+  font-size: 1.5rem;
+}
+.bg-violeta-yavino:hover {
+  transform: none !important;
+  box-shadow: none !important;
+}
+.bg-violeta-yavino img:hover {
+  transform: none !important;
+  box-shadow: none !important;
+  filter: none !important;
+}
+
+.small-img {
+  width: 60px;
+  height: auto;
+}
+.card h5 {
+  font-family: 'Mada', serif;
+  color: #ffffff;
+  font-weight: bold;
+}
+.card p {
+  font-family: 'Mada', sans-serif;
+  color: #ffffff;
+}
+.object-fit-cover {
+  object-fit: cover;
+}
+.bg-purple {
+  background-color: #8400FF;
+  color: white;
+}
+
+.bg-purple h2,
+.bg-purple p,
+.bg-purple li,
+.bg-purple small {
+  color: white;
+}
+
+.bg-purple .card {
+  background-color: white;
+  color: black;
+}
+
+.bg-purple .card h5 {
+  color: #8400FF;
+}
+
+.no-animation img {
+  transition: none !important;
+}
+
+.no-animation img:hover {
+  transform: none !important;
+  box-shadow: none !important;
+}
+.text-purple {
+  color: #8400FF;
+}
+.img-plan {
+  height: 180px;
+  width: 100%;
+  max-width: 240px;
+  object-fit: contain;
+  margin: 0 auto;
+  display: block;
+  transform: scale(1.3)!important;
+  transform-origin: center center;
+  transition: none !important;
+}
+.img-plan:hover {
+  transform: scale(1.3) !important;
+  transition: none!important;
+  cursor: default!important;
+   /* Quitar borde o sombra al hacer hover */
+  border: none !important;
+  box-shadow: none !important;
+  outline: none !important; /* por si es un foco */
+}
+
+.card-text-custom {
+  color: #8400FF!important;
+
+}
+.list-violet li {
+  color: #8400FF;
+}
+
+.precio-plan {
+  font-size: 3rem!important;
+  font-weight: 700!important;
+  color: #8400FF!important;
+  margin-top: 1rem!important;
+}
+
+.precio-plan small {
+  color: inherit;
+  font-weight: 400;
+}
+.btn-rojo {
+  background-color: #FF070B;  /* Un rojo vino intenso */
+  color: #fff;
+  border: none;
+  border-radius: 50px;
+  padding: 10px 30px;
+  font-weight: 500;
+  transition: background-color 0.3s;
+}
+
+.btn-rojo:hover {
+  background-color: #a00025;
+  color: #fff;
+}
+
+.subtitulo-faqs {
+  color: #8400FF!important;
+}
+.accordion-button,
+.accordion-body {
+  font-family: 'Mada', sans-serif; /* o la fuente que quieras */
+  font-weight: 700;
+  color: #2400FF
+}
+.accordion-button {
+  background-color: #E5E5FF; /* ejemplo: un violeta claro */
+  padding: 8px 16px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #5C1DFF;
+  border-radius: 12px;
+  box-shadow: none;
+  
+  
+}
+.accordion-button:focus,
+.accordion-button:not(.collapsed) {
+  background-color: #E5E5FF;
+  box-shadow: none;
+}
+
+.accordion-item {
+  border: none;
+  border-radius: 12px;
+  margin-bottom: 8px;
+  box-shadow: 0 2px 6px rgba(148, 118, 219, 0.05);
+}.accordion-item:first-child .accordion-button {
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+.accordion-item:last-child .accordion-button.collapsed {
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+}
+.SUBTITULO-GALERIA-MARCAS {
+  color: #8400FF!important;
+}
+.GALERIA-MARCAS {
+  color: #8400FF!important;
+}
+
+.detalle-beneficios-title {
+  color: #8400FF!important;
+   font-family: 'Libre bodoni', sans-serif;
+   font-size: 2rem;
+}
+
+.p-detalle-beneficios {
+  color: #8400FF!important;
+   font-family: 'Mada', sans-serif;
+   font-size: 1rem;
+   font-weight: 200;
+}
+.p-detalle-beneficios1 {
+  color: #8400FF!important;
+   font-family: 'Mada', sans-serif;
+   font-size: 1-5rem;
+   font-weight: 700;
+}
+.p-custom1 {
+  color: #000000!important;
+   font-family: 'Mada', sans-serif;
+   font-size: 1-5rem;
+   font-weight: 200;
+}
+
+.bg-violeta {
+  background-color: #8400FF;
+  color: white; /* opcional, por si el texto es oscuro */
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.imagen-ajustada {
+  max-width: 75%;     /* Limita el tamaño de la imagen */
+  height: auto;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  align-self: center; /* Alinea la imagen al centro del espacio vertical disponible */
+}
+.bg-violeta,
+.bg-violeta * {
+  color: white !important;
+}
+
+
+

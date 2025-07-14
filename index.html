@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Configuración básica del documento -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YaVino</title>
+    <link rel="icon" href="imagenes-nuevas/logo.png" type="image/png">
+
+    <!-- Tipografía desde Google Fonts -->
+     <link href="https://fonts.googleapis.com/css2?family=Libre+Bodoni:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css2?family=Mada:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Reenie+Beanie&display=swap" rel="stylesheet">
+
+
+    <!-- Framework CSS de Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+
+    <!-- Estilos personalizados -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg fixed-top">
+  <div class="container d-flex align-items-center justify-content-between">
+    
+    <!-- Logo -->
+    <a class="navbar-brand" href="#">
+      <img src="imagenes-nuevas/logo.png" alt="YaVino logo" style="height: 80px;">
+    </a>
+
+    <!-- Botón responsive -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Menú de navegación -->
+    <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+      <ul class="navbar-nav gap-1"> <!-- `gap-4` es Bootstrap, para espaciar -->
+        <li class="nav-item"><a class="nav-link active" href="#">Inicio</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Suscripciones</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Nosotros</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Contacto</a></li>
+      </ul>
+    </div>
+
+    <!-- Espacio para íconos (opcional) -->
+    <div class="navbar-icons d-none d-lg-flex gap-3">
+      <!-- Iconos en SVG o FontAwesome, por ejemplo -->
+      <a href="#"><img src="imagenes-nuevas/carrito.svg" alt="Usuario" style="height: 24px;"></a>
+      <a href="#"><img src="imagenes-nuevas/icon-user.svg" alt="Carrito" style="height: 24px;"></a>
+    </div>
+
+  </div>
+</nav>
+
+<!-- HERO: Sección de portada con llamado a la acción -->
+<section class="hero-section d-flex align-items-center" style="min-height: 100vh; padding-top: 100px;">
+  <div class="container section-spacing">
+    <div class="row align-items-center">
+    <!-- Texto principal -->
+    <div class="col-lg-6">
+      <h1 class="h1-custom">EL PLACER DEL <br>VINO EN TU CASA</h1>
+      <p class="p-custom">Una suscripción mensual con vinos seleccionados por sommeliers.<br> Cada mes, una experiencia distinta.</p>
+      <div class="d-flex gap-3 mt-4">
+        <a href="#" class="btn btn-dark">Ver Suscripciones</a>
+      </div>
+    </div>
+    <!-- Imagen destacada -->
+    <div class="col-lg-6 text-center">
+      <img src="imagenes-nuevas/img-hero-nuevo.png" class="img-fluid img-rounded" alt="Imagen Hero">
+    </div>
+  </div>
+</section>
+<!-- /HERO -->
+
+<!-- ABOUT: Sección sobre nosotros -->
+<section class="about-section text-center no-animation">
+  <div class="container section-spacing">
+  <h2 class="h2-custom">PASO A PASO, COPA A COPA</h2>
+  <p class="mt-3 mb-5">¿Cómo recibís tu selección?</p>
+  <div class="row">
+    <!-- Cuatro columnas informativas -->
+    <div class="row">
+  <div class="col-md-3">
+    <h4 class="h4-custom">
+      <span class="step-number">1.</span> Elegís tu plan
+    </h4>
+     <img src="imagenes-nuevas/calendaria.png" alt="Elegís tu plan" class="img-fluid mb-3">
+  </div>
+  <div class="col-md-3">
+    <h4 class="h4-custom">
+      <span class="step-number">2.</span> Recibís una selección mensual curada
+    </h4>
+      <img src="imagenes-nuevas/copa-sola.png" alt="Elegís tu plan" class="img-fluid mb-3">
+  </div>
+  <div class="col-md-3">
+   <h4 class="h4-custom">
+      <span class="step-number">3.</span> Disfrutá y aprendé con contenido exclusivo
+    </h4>
+    <img src="imagenes-nuevas/lupa.png" alt="Elegís tu plan" class="img-fluid mb-3">
+  </div>
+  <div class="col-md-3">
+   <h4 class="h4-custom">
+      <span class="step-number">4.</span> Gestioná tu suscripción como quieras
+    </h4>
+    <img src="imagenes-nuevas/candado.png" alt="Elegís tu plan" class="img-fluid mb-3">
+ 
+  </div>
+</div>
+
+</section>
+<!-- /ABOUT -->
+
+<!-- /nosotros -->
+
+ <!-- Sección completa con fondo extendido -->
+<section class="section-spacing bg-light-custom">
+
+  <!-- Contenedor interno para centrar contenido -->
+  <div class="container text-center">
+
+  <h2 class="h2-custom">NOSOTROS</h2>
+  <p class="mb-5 text-purple">Conocenos un poco más</p>
+
+
+
+  <div class="row mb-4">
+    <!-- Card rectangular arriba (solo imagen) -->
+    <div class="col-12">
+      <div class="card h-100 p-0 overflow-hidden no-hover">
+        <img src="imagenes-nuevas/primera-img-secciones.png" class="img-fluid w-100" alt="Servicio destacado">
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <!-- Card inferior izquierda -->
+   <div class="col-md-6 mb-4">
+      <div class="card h-100 p-4 d-flex flex-column justify-content-center bg-violet-card text-white no-hover">
+         <h5 class="text-title fs-1">¿Y AHORA QUÉ VINO?</h5>
+        <p class="text-white-force text-big"><strong>Así nació Yavino:</strong><br>vinos únicos, directo<br> a tu puerta.<br>Sin vueltas.</p>
+
+      </div>
+    </div>
+
+    <!-- Card inferior derecha -->
+    <div class="col-md-6 mb-4">
+      <div class="card h-100 p-4 d-flex flex-column justify-content-center bg-violet-card text-white no-hover">
+         <h5 class="text-title fs-1">YA SOMOS MILES</h5>
+        <p class="text-white-force text-big"><strong>¿Y vos, qué estás</strong><br>esperando para<br> brindar diferente?</p>
+
+      </div>
+    </div>
+  </div>
+
+</section>
+
+
+
+<!-- galeria de imagenes -->
+<section class="section-spacing py-5 text-center bg-aprende" style="background-color: #F8F7FF;">
+
+  <div class="container">
+    <h2 class="mb-4 h2-custom">APRENDE DE NOSOTROS</h2>
+    <p class="mb-5">El detrás de escena de nuestros depósitos</p>
+
+    <!-- Primera fila -->
+    <div class="row g-4">
+      <div class="col-md-4">
+        <img src="imagenes-nuevas/GALERIA-1.jpg" class="img-fluid img-rounded rounded" alt="Imagen 1">
+      </div>
+      <div class="col-md-4">
+        <img src="imagenes-nuevas/GALERIA-2.jpg" class="img-fluid img-rounded rounded" alt="Imagen 2">
+      </div>
+      <div class="col-md-4">
+        <img src="imagenes-nuevas/GALERIA-3.jpg" class="img-fluid img-rounded rounded" alt="Imagen 3">
+      </div>
+    </div>
+
+    <!-- Segunda fila -->
+    <div class="row g-4 mt-3">
+      <div class="col-md-4">
+        <img src="imagenes-nuevas/GALERIA-4.jpg" class="img-fluid img-rounded rounded" alt="Imagen 4">
+      </div>
+      <div class="col-md-4">
+        <img src="imagenes-nuevas/GALERIA-5.jpg" class="img-fluid img-rounded rounded" alt="Imagen 5">
+      </div>
+      <div class="col-md-4">
+        <img src="imagenes-nuevas/GALERIA-6.jpg" class="img-fluid img-rounded rounded" alt="Imagen 6">
+      </div>
+    </div>
+
+    <!-- Indicadores debajo de las imágenes -->
+    <div class="d-flex justify-content-center align-items-center gap-4 mt-4">
+      <button class="indicator-btn">
+        <span>&larr;</span>
+      </button>
+
+      <div class="d-flex gap-2">
+        <span class="dot inactive"></span>
+        <span class="dot active"></span>
+        <span class="dot inactive"></span>
+      </div>
+
+      <button class="indicator-btn">
+        <span>&rarr;</span>
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- GALERÍA E: Cards tipo "story" con imagen y texto -->
+<section class="py-5" style="background-color: #F8F7FF;">
+  <div class="container section-spacing">
+
+    <h2 class="mb-4 text-center text-violeta-yavino">¿POR QUÉ YAVINO?</h2>
+
+    <div class="row g-4 align-items-stretch">
+
+      <!-- Columna izquierda: imagen vertical -->
+      <div class="col-md-4 d-flex">
+        <div class="w-100 rounded overflow-hidden" style="height: 100%;">
+          <img src="imagenes-nuevas/Plan-basico.png" class="img-fluid h-100 w-100 object-fit-cover" alt="Imagen vertical">
+        </div>
+      </div>
+
+      <!-- Columna derecha: 4 cards en 2x2 -->
+      <div class="col-md-8">
+        <div class="row g-4 h-100">
+          <div class="col-md-6">
+            <div class="card bg-violeta-yavino text-center p-3 h-100" style="background-color: #8400FF; color: white; border: none;">
+              <img src="imagenes-nuevas/estrella.png" class="mx-auto mb-3" style="width: 150px;" alt="">
+              <div class="card-body p-0">
+                <h5 class="fw-bold">Vinos que valen</h5>
+                <p class="small">Cada botella cuenta una historia especial para compartir.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card bg-violeta-yavino text-center p-3 h-100" style="background-color: #8400FF; color: white; border: none;">
+              <img src="imagenes-nuevas/chin-chin.png" class="mx-auto mb-3" style="width: 150px;" alt="">
+              <div class="card-body p-0">
+                <h5 class="fw-bold">La comunidad posta</h5>
+                <p class="small">Acá se brinda, se recomienda, se comparte.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="card bg-violeta-yavino text-center p-3 h-100" style="background-color: #8400FF; color: white; border: none;">
+              <img src="imagenes-nuevas/bla-bla-bla.png" class="mx-auto mb-3" style="width: 150px;" alt="">
+              <div class="card-body p-0">
+                <h5 class="fw-bold">Sin bla bla</h5>
+                <p class="small">No necesitas saber de vinos.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="card bg-violeta-yavino text-center p-3 h-100" style="background-color: #8400FF; color: white; border: none;">
+              <img src="imagenes-nuevas/reloj.png" class="mx-auto mb-3" style="width:  150px;" alt="">
+              <div class="card-body p-0">
+                <h5 class="fw-bold">Tu ritmo, tus reglas</h5>
+                <p class="small">Es una experiencia para acompañarte, no para atarte.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- PLANES DE SUSCRIPCIÓN: Sección con 3 opciones destacadas -->
+<section class="text-center py-5 bg-purple" style="background-color: #8400FF;">
+  <div class="container section-spacing">
+    <h2 class="section-title h2-custom">ELEGÍ TU SUSCRIPCIÓN</h2>
+    <p class="section-subtitle p-custom">Tres formas de suscribirte. Tres maneras de disfrutar.</p>
+
+    <div class="row mt-5">
+    
+    <!-- Card: Plan Básico -->
+    <div class="col-md-4 mb-4">
+      <div class="card p-4 h-100">
+        <!-- Título  -->
+        <h5 class="text-uppercase">Plan Essencial</h5>
+        
+        
+        <!-- Imagen ilustrativa -->
+        <img src="imagenes-nuevas/PLAN-ESSENCIAL.png" class="img-fluid img-rounded my-3 img-plan" alt="Plan Básico">
+
+
+        <!-- Descripción -->
+        <p class="card-text-custom">Explorá vinos auténticos<br><strong>Incluye:</strong></p>
+        
+        <!-- Lista de beneficios -->
+        <ul class="list-unstyled text-start mx-auto list-violet" style="max-width: 250px;">
+          <li>✔ 2 Botellas seleccionadas</li>
+          <li>✔ Ficha técnica básica</li>
+          <li>✔ Envio a todo el país</li>
+          <li>✔ Cancela en cualquier momento</li>
+        </ul>
+       <p class="precio-plan">$30.000 <small>/ mes</small></p>
+
+
+        <!-- Botón CTA -->
+        <a href="/pagina-detalle/pagina-detalle.html" class="btn btn-rojo mt-3">Elegir plan</a>
+
+      </div>
+    </div>
+
+    <!-- Card: Plan Pro (Recomendado) -->
+    <div class="col-md-4 mb-4">
+      <div class="card p-4 h-100 border border-primary">
+        <!-- Título -->
+        <h5 class="text-uppercase">Plan Reserva <span class="badge bg-primary ms-2">Recomendado</span></h5>
+        
+        
+        <!-- Imagen ilustrativa -->
+        <img src="imagenes-nuevas/PLAN-RESERVA-new.png" class="img-fluid img-rounded my-3 img-plan" alt="Plan Pro">
+
+        <!-- Descripción -->
+        <p class="card-text-custom">Vinos con más carácter.<br><strong>Incluye:</strong></p>
+        
+        <!-- Lista de beneficios -->
+        <ul class="list-unstyled text-start mx-auto list-violet" style="max-width: 250px;">
+          <li>✔ 3 botellas + 1 copa</li>
+          <li>✔ Ficha amplia del origen</li>
+          <li>✔ Acceso a workshops</li>
+          <li>✔ Eventos presenciales en tu localidad</li>
+        </ul>
+        <p class="precio-plan">$50.000 <small>/ mes</small></p>
+
+
+        <!-- Botón CTA -->
+        <a href="/pagina-detalle/pagina-detalle.html" class="btn btn-rojo mt-3">Elegir plan</a>
+
+      </div>
+    </div>
+
+    <!-- Card: Plan Full -->
+    <div class="col-md-4 mb-4">
+      <div class="card p-4 h-100">
+        <!-- Título  -->
+        <h5 class="text-uppercase">Plan Ícono</h5>
+        
+        
+        <!-- Imagen ilustrativa -->
+        <img src="imagenes-nuevas/PLAN-ICONO-NEW.png" class="img-fluid img-rounded my-3 img-plan" alt="Plan Full">
+
+        <!-- Descripción -->
+        <p class="card-text-custom">Un vino con historia.<br><strong>Incluye:</strong></p>
+        
+        <!-- Lista de beneficios -->
+        <ul class="list-unstyled text-start mx-auto list-violet" style="max-width: 250px;">
+          <li>✔ Todo lo del plan reserva</li>
+          <li>✔ Consultorías personalizadas</li>
+          <li>✔ Acceso anticipado a lanzamientos</li>
+          <li>✔ Certificados exclusivos</li>
+        </ul>
+        <p class="precio-plan">$60.000 <small>/ mes</small></p>
+
+        <!-- Botón CTA -->
+        <a href="/pagina-detalle/pagina-detalle.html" class="btn btn-rojo mt-3">Elegir plan</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+<!-- /PLANES DE SUSCRIPCIÓN -->
+
+<!-- FAQS: Preguntas frecuentes -->
+<section class="section-spacing container text-center">
+  <h2 class="h2-custom">PREGUNTAS FRECUENTES</h2>
+  <p class="p-custom subtitulo-faqs">Preguntas que te pueden surgir antes de terminar tu compra.</p>
+  <div class="accordion mt-5" id="faqAccordion">
+    <!-- Ítem de pregunta -->
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingOne">
+        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+          ¿Puedo cancelar cuando quiera?
+        </button>
+      </h2>
+      <div id="collapseOne" class="accordion-collapse collapse">
+        <div class="accordion-body">
+          ¡Sí, claro! Podés cancelar tu suscripción en cualquier momento desde tu perfil. Sin ataduras, sin complicaciones.
+        </div>
+      </div>
+    </div>
+    <!-- Ítem de pregunta -->
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingTwo">
+        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+          ¿Qué pasa si no me gusta un vino?
+        </button>
+      </h2>
+      <div id="collapseTwo" class="accordion-collapse collapse">
+        <div class="accordion-body">
+          Queremos que disfrutes cada copa. Si un vino no te gusta, escribinos y lo tendremos en cuenta para tu próxima selección. ¡Tu experiencia es lo más importante!
+        </div>
+      </div>
+    </div>
+     <!-- Ítem de pregunta -->
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingTwo">
+        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree">
+          ¿Cuánto tarda en llegar?
+        </button>
+      </h2>
+      <div id="collapseThree" class="accordion-collapse collapse">
+        <div class="accordion-body">
+          Una vez confirmada tu compra, preparamos tu caja y la enviamos. En general, la entrega se realiza dentro de los 5 a 7 días hábiles.
+        </div>
+      </div>
+    </div>
+     <!-- Ítem de pregunta -->
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingTwo">
+        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour">
+          ¿Cuáles son las formas de pago?
+        </button>
+      </h2>
+      <div id="collapseFour" class="accordion-collapse collapse">
+        <div class="accordion-body">
+          Aceptamos tarjetas de crédito, débito y pagos por billeteras virtuales como Mercado Pago. Vos elegís la opción que te quede más cómoda.
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+  </div>
+</section>
+  </div>
+</section>
+<!-- /FAQS -->
+ <!-- GALERÍA C: Carrusel horizontal con tarjetas -->
+<section class="section-spacing container py-5 text-center">
+  <h2 class="mb-4 h2-custom GALERIA-MARCAS">MARCAS PRESENTES</h2>
+   <p class="SUBTITULO-GALERIA-MARCAS">Siempre junto con YaVino.</p>
+  <div id="carouselGaleriaC" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <!-- Slide 1 -->
+      <div class="carousel-item active">
+        <div class="d-flex justify-content-center gap-3">
+          <img src="imagenes-nuevas/alamos.png" class="rounded" alt="Item 1">
+          <img src="imagenes-nuevas/alma-negra.png" class="rounded" alt="Item 2">
+          <img src="imagenes-nuevas/animal.png" class="rounded" alt="Item 3">
+          <img src="imagenes-nuevas/baron-b.png" class="rounded" alt="Item 4">
+          <img src="imagenes-nuevas/catena-zapata.png" class="rounded" alt="Item 5">
+        </div>
+      </div>
+      <!-- Slide 2 -->
+      <div class="carousel-item">
+        <div class="d-flex justify-content-center gap-3">
+          <img src="imagenes-nuevas/dv-catena.png" class="rounded" alt="Item 6">
+          <img src="imagenes-nuevas/alamos.png" class="rounded" alt="Item 7">
+          <img src="imagenes-nuevas/alma-negra.png" class="rounded" alt="Item 8">
+          <img src="imagenes-nuevas/animal.png" class="rounded" alt="Item 9">
+          <img src="imagenes-nuevas/baron-b.png" class="rounded" alt="Item 10">
+        </div>
+      </div>
+    </div>
+    <!-- Controles -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselGaleriaC" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselGaleriaC" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+  </div>
+</section>
+
+
+
+
+
+<!-- CONTACT FORM: Formulario de contacto -->
+<section class="section-spacing container text-center">
+  <h2 class="h2-custom">¿BRINDAMOS? HABLEMOS</h2>
+  <p class="p-custom">Ya sea para contarnos algo lindo o hacer una consulta</p>
+  <div class="row justify-content-center">
+    <div class="col-md-6">
+      <form >
+        <div class="mb-3">
+          <input type="text" class="form-control" placeholder="Tu nombre">
+        </div>
+        <div class="mb-3">
+          <input type="email" class="form-control" placeholder="Tu email">
+        </div>
+        <div class="mb-3">
+          <textarea class="form-control" rows="4" placeholder="Tu mensaje"></textarea>
+        </div>
+        <button type="submit" class="btn btn-dark w-100">Enviar Mensaje</button>
+      </form>
+    </div>
+  </div>
+</section>
+<!-- /CONTACT FORM -->
+
+<!-- FOOTER: Pie de página -->
+<footer class="text-center py-4">
+  <div class="container">
+    <p class="p-custom">© 2025 Belluccia 3 - Comisión 2 -Michelle Martinez Pinto</p>
+  </div>
+</footer>
+<!-- /FOOTER -->
+
+
+<!-- NO LO VOY A USAR EN ESTA PAGINA -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Bootstrap Bundle JS (incluye Popper) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+
+<!-- Script personalizado para cambiar el navbar al hacer scroll -->
+<script>
+window.addEventListener('scroll', function() {
+  const navbar = document.querySelector('.navbar');
+  navbar.classList.toggle('scrolled', window.scrollY > 50);
+});
+</script>
+
+<!-- Scripts adicionales -->
+<script src="scripts.js"></script>
+<script>
+  window.addEventListener("scroll", function () {
+    const navbar = document.querySelector(".navbar");
+    if (window.scrollY > 10) {
+      navbar.classList.add("navbar-scrolled");
+    } else {
+      navbar.classList.remove("navbar-scrolled");
+    }
+  });
+</script>
+</body>
+</html>
